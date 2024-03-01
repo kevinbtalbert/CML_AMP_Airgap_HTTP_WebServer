@@ -1,0 +1,17 @@
+name: HTTP Webserver for Airgapped Hosting of AMP Catalogs
+
+entries:
+  - title: HTTP Webserver for Airgapped Hosting of AMP Catalogs
+    label: amp-catalog-server
+    short_description: |
+        HTTP Webserver for Airgapped Hosting of AMP Catalogs
+    long_description: |
+        HTTP Webserver for Airgapped Hosting of AMP Catalogs
+
+    image_path: >-
+      https://raw.githubusercontent.com/kevinbtalbert/CML_AMP_Airgap_HTTP_WebServer/main/catalog-icon.png
+    tags:
+      - Webserver
+      - AMP Catalog Host
+    git_url: 'https://github.com/kevinbtalbert/CML_AMP_Airgap_HTTP_WebServer'
+    is_prototype: true
