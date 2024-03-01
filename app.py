@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # Renders the homepage with links to the YAML files.
-    return render_template('index.html'
+    return render_template('index.html')
 
 @app.route('/community-amp-catalog.yaml')
 def community():

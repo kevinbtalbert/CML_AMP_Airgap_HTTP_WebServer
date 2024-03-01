@@ -24,7 +24,7 @@ tasks:
   - type: start_application
     name: AMP Catalog Webserver
     subdomain: amp-catalog-server
-    script: app.py
+    script: launch-app.py
     short_summary: Launch Flask Server
     long_summary: Launch Flask HTTP Webserver application. Remember to enable unauthenticated app access for external access to the UI.
     cpu: 1
