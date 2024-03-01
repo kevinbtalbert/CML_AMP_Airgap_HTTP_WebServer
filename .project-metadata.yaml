@@ -22,7 +22,7 @@ tasks:
     memory: 2
 
   - type: start_application
-    name: CML Chroma Server REST API Server
+    name: AMP Catalog Webserver
     subdomain: amp-catalog-server
     script: app.py
     short_summary: Launch Flask Server
