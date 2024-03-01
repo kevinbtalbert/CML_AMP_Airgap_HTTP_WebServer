@@ -13,7 +13,11 @@ def files(filename):
     # Serves the YAML files from the 'files' directory.
     return send_from_directory('files', filename)
 
-if __name__ == '__main__':
+def main():
     app.run(host='127.0.0.1',
             port=int(os.getenv('CDSW_APP_PORT')),
             debug=True)
+
+
+if __name__ == '__main__':
+    main()
