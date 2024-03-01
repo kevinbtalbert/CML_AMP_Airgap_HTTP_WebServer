@@ -1,0 +1,34 @@
+name: HTTP Webserver for Airgapped Hosting of AMP Catalogs
+description: |
+  HTTP Webserver for Airgapped Hosting of AMP Catalogs
+
+author: Cloudera Inc.
+specification_version: 1.0
+prototype_version: 1.0
+date: "2024-03-01"
+
+runtimes:
+  - editor: Workbench
+    kernel: Python 3.10
+    edition: Standard
+
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: install_dependencies.py
+    short_summary: Install Package Dependencies
+    kernel: python3
+    cpu: 2
+    memory: 2
+
+  - type: start_application
+    name: CML Chroma Server REST API Server
+    subdomain: amp-catalog-server
+    script: app.py
+    short_summary: Launch Flask Server
+    long_summary: Launch Flask HTTP Webserver application. Remember to enable unauthenticated app access for external access to the UI.
+    cpu: 1
+    memory: 1
+    environment_variables:
+      TASK_TYPE: START_APPLICATION
+    
