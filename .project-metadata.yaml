@@ -15,7 +15,7 @@ runtimes:
 tasks:
   - type: run_session
     name: Install Dependencies
-    script: install_dependencies.py
+    script: install-dependencies.py
     short_summary: Install Package Dependencies
     kernel: python3
     cpu: 2
